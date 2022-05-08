@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.fastmap.InterfazLogin">
+
+    <TextView
+        android:id="@+id/fastmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="FastMap"
+        android:textSize="30sp" />
+
+<TextView
+    android:id="@+id/usuario"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/fastmap"
+    android:layout_alignStart="@+id/fastmap"
+    android:layout_below="@+id/fastmap"
+    android:layout_marginTop="80dp"
+    android:fontFamily="monospace"
+    android:text="Usuario"
+    android:textSize="25sp" />
+
+<EditText
+    android:id="@+id/et_usuario"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/usuario"
+    android:ems="17"
+    android:layout_alignLeft="@+id/usuario" />
+
+<TextView
+    android:id="@+id/contraseña"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/et_usuario"
+    android:layout_alignStart="@+id/et_usuario"
+    android:layout_below="@+id/et_usuario"
+    android:layout_marginTop="33dp"
+    android:fontFamily="monospace"
+    android:text="Contraseña"
+    android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="17" />
+
+<Button
+    android:id="@+id/btn_entrar"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_below="@id/et_contraseña"
+    android:layout_centerInParent="true"
+    android:ems="12"
+    android:layout_marginTop="30dp"
+    android:text="Entrar"/>
+
+</RelativeLayout>
